@@ -6,32 +6,32 @@ export const mainMenuLinks = [
         id: 1,
         label: "User",
         route: "user",
-        //  icon: <GrUser />,
+        icon: <GrUser />,
     },{
         id: 2,
         label: "Home",
         route: "home",
-        // icon: <GrHome />,
+        icon: <GrHome />,
     },{
         id: 3,
         label: "Categories",
         route: "Categories",
-        // icon: <GrCatalog />,
+        icon: <GrCatalog />,
     },{
         id: 4,
         label: "Products",
         route: "products",
-        // icon: <GrCoatCheck />
+        icon: <GrCoatCheck />
     },{
         id: 5,
         label: "Gift",
         route: "gift",
-        // icon: <GrGift />
+        icon: <GrGift />
     },{
         id: 6,
         label: "Orders",
         route: "orders",
-        // icon: <GrThreeDEffects />
+        icon: <GrThreeDEffects />
     },
 
 ]

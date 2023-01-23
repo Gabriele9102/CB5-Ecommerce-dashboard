@@ -6,7 +6,7 @@ const MainMenu = () => {
     return(
         <ul className={styles.main}>
         {
-            mainMenuLinks.map((link, index) => (<Li  key={link.id} label={link.label}/>))
+            mainMenuLinks.map((link, id) => (<Li icon={link.icon} label={link.label} key={id} />))
         }
 
         </ul>

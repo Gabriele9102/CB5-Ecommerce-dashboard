@@ -5,12 +5,11 @@
     justify-content: flex-start ;
     gap: 10px;
     height: 30px;
-    &:hover{
-        background: lightgray;
-    }
+    
 
     .icon {
-
+        width: 20px;
+        height: auto;
     }
 
     .label{
