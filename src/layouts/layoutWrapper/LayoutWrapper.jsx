@@ -1,8 +1,14 @@
 
+import Navbar from './../../components/navbar/Navbar';
 const LayoutWrapper = ({children}) => {
 
     return (
-        <div className="LayoutWrapper">{children}</div>
+        <div className="LayoutWrapper">
+        
+        <Navbar />
+        {children}
+        
+        </div>
     )
 }
 
