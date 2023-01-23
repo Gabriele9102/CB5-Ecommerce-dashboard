@@ -1,0 +1,57 @@
+@import "../costants/variables.scss";
+
+.navbar{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 6px 28px;
+    margin: 2px 0px;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 0 4px;
+    height: $navbar-height;
+
+    .wrapper{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding-top: 3px;
+        
+        img{
+    
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            cursor: pointer;
+            margin-top: 7px;
+        
+        }
+
+        h6{
+            color: black;
+            font-size: medium;
+            margin: 0;
+            padding-top: 20px;
+
+        }
+
+    }
+    
+    ul {
+    
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding-top: 7px;
+        
+    
+    }
+    a {
+   
+       text-decoration: none;
+       color: black;
+       
+   
+   }
+    
+}

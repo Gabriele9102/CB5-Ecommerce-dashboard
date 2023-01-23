@@ -1,0 +1,21 @@
+@import "../costants/variables.scss";
+
+.header{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - $header-height - $navbar-height);
+    border-radius: 6px;
+
+    .leftColumn{
+        width: 500px;
+        padding: 20px;
+        height: calc(100vh - $header-height - $navbar-height);
+        border-radius: 6px;
+        
+    }
+
+    .rightColumn{
+        width: 100%;
+        height: calc(100vh - $header-height - $navbar-height);
+    }
+}

@@ -1,0 +1,20 @@
+.main{
+    width: 100%;
+    min-height: 500px;
+    border-radius: 6px;
+    background: white;
+    text-decoration: none;
+    padding: 30px;
+    
+    li{
+        padding: 20px 0 20px 20px;
+        color: black;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        border-radius: 8px;
+
+        &:hover{
+            background: lightgray;
+        }
+    }
+}
