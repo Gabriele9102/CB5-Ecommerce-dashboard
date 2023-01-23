@@ -46,6 +46,22 @@
         
     
     }
+    
+        li{
+            
+            color: black;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border-radius: 6px;
+        
+            
+    
+            &:hover{
+                background: lightgray;
+                padding: 2px 0px;
+            }
+        }
+    
     a {
    
        text-decoration: none;
