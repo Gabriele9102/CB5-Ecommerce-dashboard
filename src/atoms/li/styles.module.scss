@@ -3,16 +3,30 @@
     display: flex;
     align-items: center;
     justify-content: flex-start ;
-    gap: 10px;
-    height: 30px;
+    gap: 20px;
+    height: 40px;
+    @media all and (max-width: 800px){
+        &{
+            justify-content: center;
+        }
+    }
     
 
     .icon {
-        width: 20px;
-        height: auto;
+        svg{
+            width: 25px;
+            height: auto;
+
+        }
     }
 
     .label{
-
+        font-weight: bold;
+        font-size: large;
+        @media all and (max-width: 800px){
+            &{
+              display: none;
+            }
+        }
     }
 }

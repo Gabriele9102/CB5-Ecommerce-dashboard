@@ -1,9 +1,9 @@
 import styles from './styles.module.scss';
 
-const Li = ({label, icon}) => {
+const Li = ({label, icon, setRoute,routeUrl}) => {
 
     return(
-        <li className={styles.main}>
+        <li onClick={() => setRoute(routeUrl)} className={styles.main}>
             <div className={styles.icon}>{icon}</div>
             <div className={styles.label}>{label}</div>
         </li>

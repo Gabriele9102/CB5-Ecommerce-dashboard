@@ -15,7 +15,7 @@ export const mainMenuLinks = [
     },{
         id: 3,
         label: "Categories",
-        route: "Categories",
+        route: "categories",
         icon: <GrCatalog />,
     },{
         id: 4,

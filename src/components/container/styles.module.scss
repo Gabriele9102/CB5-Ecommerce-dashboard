@@ -7,15 +7,23 @@
     border-radius: 6px;
 
     .leftColumn{
-        width: 500px;
-        padding: 20px;
+        width: 300px;
+        padding: 0px;
         height: calc(100vh - $header-height - $navbar-height);
         border-radius: 6px;
+        @media all and (max-width: 800px){
+            &{
+              width: 60px;
+            }
+          }
         
     }
 
     .rightColumn{
         width: 100%;
+        border-radius: 6px;
+        padding-left: 55px;
+        padding-top: 2px;
         height: calc(100vh - $header-height - $navbar-height);
     }
 }
