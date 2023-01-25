@@ -11,20 +11,13 @@
 
         border-radius: 6px 6px 0 0;
 
-        button{
-            background: transparent;
-            border: none;
-            &:hover{
-                cursor: pointer;
-            }
-        }
-
         .top{
-            display: flex;
-            align-items: center;
             font-weight: bold;
             font-size: 10px;
-            gap: 130px;
+            display: flex;
+            gap: 45px;
+            align-items: center;
+            border-bottom: 1px solid #d0c9c9;
 
         }
     }
@@ -35,20 +28,24 @@
         border-radius: 0 0 6px 6px;
         background: rgb(248, 244, 244);
     }
+    
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #d0c9c9;
+    }
 
     .tableMap{
         display: flex;
         align-items: center;
         height: 40px;
         gap: 20px;
-        border-bottom: 1px solid #d0c9c9;
+        
         img{
-            max-height: 30px;
-            padding-left: 100px;
+            max-height: 35px;
         }
 
-        .name{
-            flex-grow: 1;
-        }
+    
+
     }
 }
