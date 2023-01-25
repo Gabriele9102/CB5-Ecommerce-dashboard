@@ -1,10 +1,14 @@
-import styles from './styles.module.scss';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { GET } from '../utils/HTTP';
 import Table from '../Table';
+import { GrFormAdd } from "react-icons/gr";
+import Modal from '../Modal';
+import styles from './styles.module.scss';
 
 const Categories = () => {
+  const [showModal, setShowModal] = useState(false);
+
     const categoryObj = {
         categories: [],
         loading: false
@@ -25,18 +29,17 @@ const Categories = () => {
         getData();
         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
-    
+      
       return (
         <div className={styles.categories}>
+        {showModal && <Modal getData={getData} setShowModal={setShowModal} />}
           <h1>Categories</h1>
-          {list.loading ? ("loading...")  : (<Table  list={list.categories} getData={getData}/>)}
-          {/* <Table
-            list={list.categories}
-            loading={list.loading}
-            getData={getData}
-          /> */}
+          <button onClick={() => setShowModal(true)}><GrFormAdd /></button>
+          {list.loading ? ("loading...")  : (<Table key={list.id} list={list.categories} setShowModal={setShowModal} getData={getData}/>)}
+         
         </div>
       );
+      
     };
     
     export default Categories;
