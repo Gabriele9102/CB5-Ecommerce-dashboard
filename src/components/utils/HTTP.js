@@ -20,7 +20,7 @@ export const POST = (type, objBody) => {
   };
   
   export const PUT = (type, objBody, id) => {
-    return fetch(Url + type + id, {
+    return fetch(Url + type + "/" + id, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export const POST = (type, objBody) => {
   };
   
   export const DELETE = (type, id) => {
-    return fetch(Url + type + id, {
+    return fetch(Url + type + "/" + id, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

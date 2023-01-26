@@ -1,0 +1,39 @@
+.liProducts{
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ 
+
+    .card{
+        border-radius: 8px;
+        width: 230px;
+        height: 280px;
+        background:#d3cdcd;
+        margin-top: 20px;
+        left: 0;
+        box-shadow: 0 0 4px 0;
+        z-index: 2;
+    }
+
+    img{
+        margin-top: 20px;
+        width: 200px;
+        height: 150px;
+        box-shadow: 0 0 4px 0;
+        border-radius: 8px;
+        border: 0.5px solid white;
+    }
+
+    
+    li{
+        list-style: none;
+        
+
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
