@@ -4,9 +4,10 @@ import { useState } from 'react';
 import User from './../user/User';
 import Home from './../home/Home';
 import Categories from './../categories/Categories';
-import Products from './../products/Products';
+
 import Gift from './../gift/Gift';
 import Orders from './../orders/Orders';
+import {AllProducts} from '../Allproducts/AllProducts';
 
 const Container = () => {
     const [route, setRoute] = useState('home')
@@ -19,7 +20,7 @@ const Container = () => {
         {route==="user"&& <User />}
         {route==="home"&& <Home />}
         {route==="categories"&& <Categories />}
-        {route==="products"&& <Products />}
+        {route==="products"&& <AllProducts /> }
         {route==="gift"&& <Gift />}
         {route==="orders"&& <Orders />}
         </div>
