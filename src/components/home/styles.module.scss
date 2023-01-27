@@ -7,4 +7,41 @@
         font-size: 20px;
         color: black;
     }
+    
+    .wrapper{
+        display: flex;
+
+        .wraplist{
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px 50px;
+            gap: 30px;
+
+            .plenght,
+            .clenght,
+            .ulenght {
+                padding-top: 10px;
+                width: 180px;
+                height: 120px;
+                border-radius: 8px;
+                box-shadow: 0 0 4px;
+                background: #d3cdcd;
+            }
+            
+           
+        }
+        
+        
+        .usermap{
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow-y: scroll;
+            height: 123vh;
+            background: #d3cdcd;
+            box-shadow: 0 0 4px;
+        }
+        
+    }
 }
